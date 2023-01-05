@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reach/auto-id": "^0.18.0",
     "@reach/combobox": "^0.18.0",
     "@react-google-maps/api": "^2.13.1",
     "@testing-library/jest-dom": "^5.16.5",
@@ -10,7 +11,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.1.2",
     "bootstrap": "^5.2.2",
-    "react": "^18.2.0",
+    "react": "^17.0.2",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
     "react-google-maps": "^9.4.5",
