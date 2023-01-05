@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useMemo } from "react";
 import Axios from "axios";
-import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
+import { GoogleMap, useLoadScript} from "@react-google-maps/api";
 import usePlacesAutocomplete, {
   getGeocode,
   getLatLng,
@@ -13,7 +13,7 @@ import {
   ComboboxInput,
 } from "@reach/combobox";
 import "@reach/combobox/styles.css";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 
 //export default function MallSearch(props) {

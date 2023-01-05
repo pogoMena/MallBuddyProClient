@@ -11,15 +11,13 @@ import {
   Marker,
 } from "@react-google-maps/api";
 import usePlacesAutocomplete, {
-  getGeocode,
   getLatLng,
 } from "use-places-autocomplete";
 
 import "@reach/combobox/styles.css";
-import "@reach/combobox/styles.css";
 import { useCallback } from "react";
 
-export default function ItemSearch({ loginStatus, userName, selection }) {
+export default function ItemSearch({  userName, selection }) {
   const [center, setCenter] = useState("");
   const [shortAddress, setShortAddress] = useState("");
   const [questions, setQuestions] = useState("");
