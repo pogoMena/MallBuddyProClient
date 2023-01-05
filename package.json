@@ -13,7 +13,6 @@
     "react": "16.8.6",
     "react-bootstrap": "^2.5.0",
     "react-dom": "16.8.6",
-    "react-google-maps": "^9.4.5",
     "react-range": "^1.8.14",
     "react-router-dom": "^6.4.1",
     "react-scripts": "^5.0.1",
