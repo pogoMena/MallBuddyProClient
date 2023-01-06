@@ -269,13 +269,19 @@ function Map({
       );
 
       if (x !== -1) {
-        console.log("Its here thats the problem i beleive");
-        console.log(questions);
-        console.log(question_id - 1);
+        
 
-        if (questions[question_id - 1].answer_type === 1) {
+        let index;
+        for (let i = 0; i < questions.length; i++) {
+          if (questions[i].question_id === question_id) {
+            index = i;
+            break;
+          }
+        }
+
+        if (questions[index].answer_type === 1) {
           answerType = "radio";
-        } else if (questions[question_id - 1].answer_type === 2) {
+        } else if (questions[index].answer_type === 2) {
           answerType = "boolean";
         }
 
