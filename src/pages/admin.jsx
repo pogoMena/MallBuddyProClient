@@ -212,7 +212,7 @@ function AdminDisplayHandler() {
             Add User
           </button>
         </div>
-        <div className="container border">
+        <div className="container border m-0">
           <div className="row">
             <div
               id="interactable"
