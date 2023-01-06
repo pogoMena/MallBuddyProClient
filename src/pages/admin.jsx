@@ -353,16 +353,16 @@ function AdminDisplayHandler() {
 
     return (
       <div className="col-10 p-5 m-auto">
-        <div className="container border">
-          <div className="row mx-auto">
-            <button
-              onClick={() => {
-                setModal("addQuestion");
-                handleShow();
-              }}>
-              Make new question
-            </button>
-          </div>
+        <div className="row mx-auto">
+          <button
+            onClick={() => {
+              setModal("addQuestion");
+              handleShow();
+            }}>
+            Make new question
+          </button>
+        </div>
+        <div className="container border m-0">
           <div className="row">
             <div
               id="interactable"
@@ -498,7 +498,7 @@ function AdminDisplayHandler() {
             Add Mall
           </button>
         </div>
-        <div className="container border">
+        <div className="container border m-0">
           <div className="row">
             <div
               id="interactable"
@@ -635,7 +635,7 @@ function AdminDisplayHandler() {
             Add Store
           </button>
         </div>
-        <div className="container border">
+        <div className="container border m-0">
           <div className="row">
             <div
               id="interactable"
@@ -741,7 +741,7 @@ function AdminDisplayHandler() {
             Add Review
           </button>
         </div>
-        <div className="container border">
+        <div className="container border m-0">
           <div className="row">
             <div
               id="interactable"
@@ -876,7 +876,7 @@ function AdminDisplayHandler() {
             Add Answer
           </button>
         </div>
-        <div className="container border">
+        <div className="container border m-0">
           <div className="row">
             <div
               id="interactable"
@@ -1016,7 +1016,7 @@ function AdminDisplayHandler() {
             Add SubComment
           </button>
         </div>
-        <div className="container border">
+        <div className="container border m-0">
           <div className="row">
             <div
               id="interactable"
