@@ -954,8 +954,9 @@ function ModalsHandler(props) {
     //setUpdatedReview(userUpdateTemp);
   };
 
-  const getParentReviewSubComments = () => {
-    var review_id = parentReview.review_id;
+  const getParentReviewSubComments = (id) => {
+    //var review_id = parentReview.review_id;
+    var review_id=id
     ///api/getreviewsubcomments
     Axios.post("https://mall-buddy-pro-server.herokuapp.com/api/getreviewsubcomments", {
       review_id,
@@ -968,7 +969,7 @@ function ModalsHandler(props) {
     Axios.post("https://mall-buddy-pro-server.herokuapp.com/api/deletesubcomment", {
       subreview_id: id,
     }).then(() => {
-      getParentReviewSubComments();
+      getParentReviewSubComments(parentReview.review_id);
       closeMakeReview();
     });
   };
@@ -1531,7 +1532,7 @@ function ModalsHandler(props) {
                     className="btn btn-secondary"
                     onClick={() => {
                       setParentReview(review);
-                      getParentReviewSubComments();
+                      getParentReviewSubComments(review.review_id);
                       setModal("createSubReview");
                     }}>
                     comments
